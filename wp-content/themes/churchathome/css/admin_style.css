@@ -1,0 +1,28 @@
+/** CSS **/
+#stats_container {
+    width: 100%;
+}
+.head_row {
+    width: 100%;
+    min-height: 45px;
+}
+.head_row .cell {
+    float: left;
+    width: 13%;
+    margin: 0;
+    padding: 10px .5% 20px .5%;
+}
+.body_row {
+    min-height: 30px;
+    border-bottom: 1px solid #333;
+}
+.body_row .cell {
+    float: left;
+    width: 13%;
+    margin: 0;
+    padding: 5px .5% 5px .5%;
+}
+.cell h3, .cell h4 {
+    margin: 0;
+    padding: 0;
+}
