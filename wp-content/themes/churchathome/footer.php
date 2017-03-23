@@ -15,7 +15,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
             <div id="footer_interior">
                 <a id="forward_logo" href="http://forwardchurch.ca" target="_blank">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/forward_footer_logo.png" alt="Forward Church" />
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/forward_footer_logo_v2.png" alt="Forward Church" />
                 </a>
                 <div id="information">
                     <div id="top_line">
