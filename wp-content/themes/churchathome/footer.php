@@ -17,19 +17,30 @@
                 <a id="forward_logo" href="http://forwardchurch.ca" target="_blank">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/forward_footer_logo_v2.png" alt="Forward Church" />
                 </a>
-                <div id="information">
-                    <div id="top_line">
-                        <span class="address">455 Myers Road, Cambridge ON, N1R 5S2</span>
-                        <span class="phone_number">519.621.6566</span>
-                        <div class="clear_float"></div>
-                    </div>
-                    <div id="bottom_line">
-                        <span class="website">
-                            <a href="http://forwardchurch.ca" target="_blank">
-                                <img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/open_link_icon.png" alt="ForwardChurch.ca"/>
-                                www.forwardchurch.ca
-                            </a>
-                        </span>
+                <div class="addresses_wrapper">
+                    <div id="information">
+                        <div id="top_line">
+                            <div class="left">
+                                <h6 class="church_name">Forward Church Cambridge</h6>
+                                <span class="address">455 Myers Road, Cambridge ON, N1R 5S2</span>
+                                <span class="phone_number">519.621.6566</span>
+                                <div class="clear_float"></div>
+                            </div>
+                            <div class="right">
+                                <h6 class="church_name">Forward Church Kitchener</h6>
+                                <span class="address">600 Doon Village Rd, Kitchener, ON N2P 1G6</span>
+                                <span class="phone_number">519.621.6566</span>
+                                <div class="clear_float"></div>
+                            </div>
+                        </div>
+                        <div id="bottom_line">
+                            <span class="website">
+                                <a href="http://forwardchurch.ca" target="_blank">
+                                    <img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/open_link_icon.png" alt="ForwardChurch.ca"/>
+                                    www.forwardchurch.ca
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
 

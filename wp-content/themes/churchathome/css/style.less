@@ -1736,32 +1736,61 @@ footer#colophon {
       width: 126px;
       height: 35px;
       margin-right: 20px;
+      margin-bottom: 16px;
 
       img {
         width: 100%;
       }
     }
 
+    .addresses_wrapper {
+      float: left;
+      &:before, &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+    }
+    .church_name {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+
     #information {
       float: left;
+      margin-right: 16px;
       span, a {
         .oxygen(12px, @Brown, normal, none, normal, 16px);
         padding: 0;
       }
       #top_line {
-        margin: 2px 0 0 0;
+        margin: 2px 0 8px 0;
         padding: 0;
+        &:after {
+          display: block;
+          content: "";
+          clear: both;
+        }
+        .left {
+          max-width: 49%;
+          float: left;
+        }
+        .right {
+          max-width: 49%;
+          float: right;
+        }
         span.address {
           display: block;
           margin: 0 25px 0 0;
           padding: 0;
-          float: left;
+          width: 100%;
         }
         span.phone_number {
           margin: 0;
           padding: 0;
           display: block;
-          float: left;
         }
       }
       #bottom_line {
