@@ -277,6 +277,7 @@ function flipChatBox_ShowLogin() {
 function flipVideoBox_ShowVideo() {
     $j('#countdown_box').addClass('hide');
     $j('#show_video').removeClass('hide');
+    jwplayer().play();
 
     $j('#place_holder').addClass('hide');
     $j('#chat_container').removeClass('hide');
@@ -286,6 +287,7 @@ function flipVideoBox_ShowVideo() {
 function flipVideoBox_ShowCountdown() {
     $j('#countdown_box').removeClass('hide');
     $j('#show_video').addClass('hide');
+    jwplayer().stop();
 
     $j('#place_holder').removeClass('hide');
     $j('#chat_container').addClass('hide');

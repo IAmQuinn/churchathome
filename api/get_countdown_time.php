@@ -12,9 +12,9 @@ $gmt = $_GET['gmt'];
 
 $GMToffset = $gmt + 4;
 // If daylight savings is "off" (we're back one hour) add another hour to our offset.
-//if(date("I") == 0) {
-//    $GMToffset += 1;
-//}
+if(date("I") === "0") :
+    $GMToffset += 1;
+endif;
 
 // If over ride is on, and end stream isn't clicked.
 if($override == "yes" && end_stream() == false ) { //&& $message != 'end_stream'

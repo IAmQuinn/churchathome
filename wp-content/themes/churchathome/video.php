@@ -11,7 +11,6 @@ if($detect->isMobile() || $detect->isTablet()) { ?>
     <video
         id="mobile_video"
         src="http://forwardchurchnew-lh.akamaihd.net/i/forwardchurch_1@431694/master.m3u8"
-        autoplay="true"
         controls="true">
         <div class="fallback">
             <p>You must have an HTML5 capable browser.</p>
@@ -27,7 +26,7 @@ if($detect->isMobile() || $detect->isTablet()) { ?>
             file: "http://forwardchurchnew-lh.akamaihd.net/i/forwardchurch_1@431694/master.m3u8",
             width: 640,
             height: 360,
-            autostart: "true",
+            autostart: "viewable",
             mediaid:"EKdsjMN4"
         });
     </script>
