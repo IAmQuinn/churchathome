@@ -32,6 +32,10 @@ if(end_stream()) {
 echo "<br>";
 echo "Day light savings: " . date("I");
 echo "<br>";
+
+echo "<br>";
+var_dump(date('I', time()));
+echo "<br>";
 echo "<br>";
 
 $messages = array();

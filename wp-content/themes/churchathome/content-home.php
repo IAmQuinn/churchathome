@@ -1,21 +1,30 @@
 <?php
 if(date('I', time()) > 0)
-    $hour = "4:00";
+    $offset_hour = "4:00";
 else
-    $hour = "5:00";
+    $offset_hour = "5:00";
 
 $hour = get_field('reg-hour', 'option');
-$minutes = get_field('reg-minute', 'option') + 5;
+$minutes = get_field('reg-minute', 'option');
 if ($minutes == 60) {
     $minutes = "00";
     $hour += 1;
 }
+$override = get_field('over-ride', 'option');
 ?>
 <div id="service_this_week">
     <div id="video_box" class="show_background">
         <a id="watch_last_service" href="#">
             <div id="countdown_box">
-                <h3>Next Service at <?php echo $hour; ?>:<?php echo $minutes ?> am EDT (GMT - <?php echo $hour; ?>)</h3>
+                <h3>
+                    <?php
+                    // Try not to judge me too harshly for how disgusting this is.
+                    if ($override != "yes") { ?>
+                        Next Service at <?php echo $hour; ?>:<?php echo $minutes ?> am EDT (GMT - <?php echo $offset_hour; ?>)
+                    <?php } else { ?>
+                    &nbsp;
+                    <?php } ?>
+                </h3>
                 <h2 id="countdown"></h2>
             </div>
         </a>
