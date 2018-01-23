@@ -19,42 +19,44 @@
                 </a>
                 <div class="addresses_wrapper">
                     <div id="information">
-                        <div id="top_line">
-                            <div class="left">
-                                <h6 class="church_name">Forward Church Cambridge</h6>
-                                <span class="address">455 Myers Road, Cambridge ON, N1R 5S2</span>
-                                <span class="phone_number">519.621.6566</span>
-                                <div class="clear_float"></div>
-                            </div>
-                            <div class="right">
-                                <h6 class="church_name">Forward Church Kitchener</h6>
-                                <span class="address">600 Doon Village Rd, Kitchener, ON N2P 1G6</span>
-                                <span class="phone_number">519.621.6566</span>
-                                <div class="clear_float"></div>
-                            </div>
+                        <div class="site">
+                            <h6 class="church_name">Forward Church Cambridge</h6>
+                            <span class="address">455 Myers Road, Cambridge ON, N1R 5S2</span>
+                            <span class="phone_number">519.621.6566</span>
+                            <div class="clear_float"></div>
                         </div>
-                        <div id="bottom_line">
+                        <div class="site">
+                            <h6 class="church_name">Forward Church Kitchener</h6>
+                            <span class="address">600 Doon Village Rd, Kitchener, ON N2P 1G6</span>
+                            <span class="phone_number">519.621.6566</span>
+                            <div class="clear_float"></div>
+                        </div>
+                        <div class="links">
                             <span class="website">
                                 <a href="http://forwardchurch.ca" target="_blank">
                                     <img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/open_link_icon.png" alt="ForwardChurch.ca"/>
                                     www.forwardchurch.ca
+                                </a>
+                                <a href="http://forwardchurch.ca/messages-media/" target="_blank">
+                                    <img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/open_link_icon.png" alt="ForwardChurch.ca"/>
+                                    Check out our archive of all past teaching.
                                 </a>
                             </span>
                         </div>
                     </div>
                 </div>
 
-                <div id="social_buttons">
-                    <div class="fb-like" data-href="http://churchathome.ca/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+<!--                <div id="social_buttons">-->
+<!--                    <div class="fb-like" data-href="http://churchathome.ca/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>-->
 
                     <!-- Place this tag where you want the +1 button to render. -->
-                    <div id="g-plusone_container">
-                        <div class="g-plusone" data-size="medium" data-href="http://churchathome.ca"></div>
-                    </div>
+<!--                    <div id="g-plusone_container">-->
+<!--                        <div class="g-plusone" data-size="medium" data-href="http://churchathome.ca"></div>-->
+<!--                    </div>-->
 
-                    <div class="clear_float"></div>
+<!--                    <div class="clear_float"></div>-->
 <!--                    <img src="--><?php //bloginfo('stylesheet_directory'); ?><!--/images/social_icons.png" />-->
-                </div>
+<!--                </div>-->
 
                 <div class="clear_float"></div>
             </div>
