@@ -210,7 +210,7 @@ function facebookLogin() {
          * http://graph.facebook.com/" + response.id + "/picture?width=80&height=80
          */
         // Set the welcome message
-        $j('#welcome_container h2').html('Welcome <span class="h2_subject">' + response.first_name + '</span><img id="profile_pic" src="http://graph.facebook.com/' + response.id + '/picture?width=40&height=40" />');
+        $j('#welcome_container h2').html('Welcome <span class="h2_subject">' + response.name + '</span><img id="profile_pic" src="http://graph.facebook.com/' + response.id + '/picture?width=40&height=40" />');
 
         chatObject.chat_name = response.name;
         chatObject.profile_id = response.id;
