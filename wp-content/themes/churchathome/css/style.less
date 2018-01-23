@@ -87,6 +87,7 @@ font-family: 'Over the Rainbow', cursive;
 @Beyond960:    ~" screen and (min-width: 960px)";
 @Beyond1000:    ~" screen and (min-width: 1000px)";
 @Beyond1020:    ~" screen and (min-width: 1020px)";
+@Beyond1050:    ~" screen and (min-width: 1050px)";
 @Beyond1100:    ~" screen and (min-width: 1100px)";
 
 .oxygen(@size : 14px, @color : @Brown, @style : normal, @trans : none, @weight : normal, @line-height : 30px) {
@@ -1725,13 +1726,12 @@ footer#colophon {
   margin: auto;
 
   #footer_interior {
-    width: 99%;
-    padding: 10px .5% 0 .5%;
+    width: auto;
+    padding: 10px 1rem 0 1rem;
     border-top: 1px solid @DarkGrey;
-    margin: 10px 0 40px 0;
+    margin: 10px 0 2rem 0;
 
     #forward_logo {
-      float: left;
       display: block;
       width: 126px;
       height: 35px;
@@ -1744,7 +1744,6 @@ footer#colophon {
     }
 
     .addresses_wrapper {
-      float: left;
       &:before, &:after {
         display: block;
         content: "";
@@ -1760,77 +1759,99 @@ footer#colophon {
 
     #information {
       float: left;
-      margin-right: 16px;
+      margin: 0;
+      padding: 0;
+
+      &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+
       span, a {
         .oxygen(12px, @Brown, normal, none, normal, 16px);
         padding: 0;
       }
-      #top_line {
-        margin: 2px 0 8px 0;
-        padding: 0;
-        &:after {
-          display: block;
-          content: "";
-          clear: both;
-        }
-        .left {
-          max-width: 49%;
-          float: left;
-        }
-        .right {
-          max-width: 49%;
-          float: right;
-        }
-        span.address {
-          display: block;
-          margin: 0 25px 0 0;
-          padding: 0;
-          width: 100%;
-        }
-        span.phone_number {
-          margin: 0;
-          padding: 0;
-          display: block;
-        }
+      .site {
+        width: 100%;
+        margin-bottom: 1rem;
       }
-      #bottom_line {
-        margin: 2px 0 0 0;
+      .links {
+        width: 100%;
+      }
+      span.address {
+        display: block;
+        margin: 0 25px 0 0;
         padding: 0;
-        span.website {
-          padding: 0;
-          margin: 0;
+        width: 100%;
+      }
+      span.phone_number {
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+      span.website {
+        padding: 0;
+        margin: 0;
+        display: block;
+
+        a {
           display: block;
-          a {
-            &:hover {
-              color: lighten(@Brown, 15%);
-            }
-            img {
-              padding: 0;
-              margin: 0;
-            }
+          line-height: 16px;
+          margin-bottom: 0.5rem;
+
+          &:hover {
+            color: lighten(@Brown, 15%);
+          }
+          img {
+            padding: 0;
+            margin: 0;
           }
         }
       }
     } /** Information **/
 
-    #social_buttons {
-      height: 20px;
-      float: right;
-      padding: 0;
-      margin: 18px 0 0 0;
-
-      .fb-like {
+    @media @Beyond650 {
+      #forward_logo {
         float: left;
       }
-      #g-plusone_container {
-        display: block;
-        float: right;
-        padding: 3px 0 0 10px;
-        margin: 0;
+      .addresses_wrapper {
+        float: left;
+      }
+      #information {
+        .site {
+          width: 49%;
+          float: left;
+          margin-right: 1%;
+        }
+
+        .links {
+          width: 100%;
+        }
+      }
+    }
+
+    @media @Beyond750 {
+      #information {
+        .site {
+          max-width: 34%;
+          margin-right: 1%;
+        }
+
+        .links {
+          max-width: 30%;
+          float: right;
+        }
       }
     }
 
   } /** Footer Interior **/
+
+  @media @Beyond1050 {
+    #footer_interior {
+      padding: 10px 0 0 0;
+    }
+  }
 }
 
 
