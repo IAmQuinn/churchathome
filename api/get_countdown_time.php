@@ -10,7 +10,7 @@ include_once('../wp-load.php');
 $override = get_field('over-ride', 'option');
 $gmt = $_GET['gmt'];
 
-//$GMToffset = $gmt + 4;
+$GMToffset = $gmt + 5;
 // If daylight savings is "off" (we're back one hour) add another hour to our offset.
 //if(date("I") === "0") :
 //    $GMToffset += 1;
