@@ -26,7 +26,6 @@ if($detect->isMobile() || $detect->isTablet()) { ?>
             file: "http://forwardchurchnew-lh.akamaihd.net/i/forwardchurch_1@431694/master.m3u8",
             width: 640,
             height: 360,
-            autostart: "viewable",
             mediaid:"EKdsjMN4"
         });
     </script>

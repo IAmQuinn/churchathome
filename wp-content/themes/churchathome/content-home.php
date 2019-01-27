@@ -97,10 +97,7 @@ $override = get_field('over-ride', 'option');
             </div>
             <div id="giving_container" class="content_container">
                 <p>
-                    Donations to www.ChurchatHome.ca (a ministry of Forward Church, Cambridge, ON) can be made through CanadaHelps.org
-                    <a id="canada_helps_link" href="http://www.canadahelps.org/CharityProfilePage.aspx?CharityID=d91917">
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/donate_canadahelps.gif" />
-                    </a>
+                    Donations to www.ChurchatHome.ca (a ministry of Forward Church, Cambridge, ON) can be made through our website at <a href="http://forwardchurch.ca/give/" target="_blank">forwardchurch.ca</a>
                 </p>
             </div>
         </div>

@@ -43,6 +43,19 @@
                                 </a>
                             </span>
                         </div>
+<!--                        <div id="bottom_line">-->
+<!--                            <span class="website">-->
+<!--                                <a href="http://forwardchurch.ca" target="_blank">-->
+<!--                                    <img class="icon" src="--><?php //bloginfo('stylesheet_directory'); ?><!--/images/open_link_icon.png" alt="ForwardChurch.ca"/>-->
+<!--                                    www.forwardchurch.ca-->
+<!--                                </a>-->
+<!--                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<!--                                <a href="http://forwardchurch.ca/messages-media/" target="_blank">-->
+<!--                                    <img class="icon" src="--><?php //bloginfo('stylesheet_directory'); ?><!--/images/open_link_icon.png" alt="ForwardChurch.ca"/>-->
+<!--                                    Check out our archive of all past teaching.-->
+<!--                                </a>-->
+<!--                            </span>-->
+<!--                        </div>-->
                     </div>
                 </div>
 
