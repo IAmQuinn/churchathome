@@ -21,7 +21,7 @@
                     <div id="information">
                         <div class="site">
                             <h6 class="church_name">Forward Church Cambridge</h6>
-                            <span class="address">455 Myers Road, Cambridge ON, N1R 5S2</span>
+                            <span class="address">55 Franklin Boulevard, Cambridge ON, N1R 5S2</span>
                             <span class="phone_number">519.621.6566</span>
                             <div class="clear_float"></div>
                         </div>

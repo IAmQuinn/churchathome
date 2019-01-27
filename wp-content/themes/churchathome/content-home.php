@@ -97,7 +97,7 @@ $override = get_field('over-ride', 'option');
             </div>
             <div id="giving_container" class="content_container">
                 <p>
-                    Donations to www.ChurchatHome.ca (a ministry of Forward Church, Cambridge, ON) can be made through our website at <a href="http://forwardchurch.ca/give/" target="_blank">forwardchurch.ca</a>
+		    To contribute to ChurchatHome and Forward Church in Cambridge, Ontario, Canada.  You can safely <a href="http://forwardchurch.ca/give/" target="_blank">Donate Now</a>.
                 </p>
             </div>
         </div>
@@ -126,12 +126,9 @@ $override = get_field('over-ride', 'option');
             </div>
             <div id="about_container" class="content_container">
                 <p>
-                    "And then He told them, 'Go into all the world and teach the Good News to everyone.'"
-                    Mark 16:15 (NLT)
-                    Church at Home is live stream of our Sunday morning services at Forward Church in Cambridge Ontario.<br>
-                    Church at Home is designed for those who may not have a local church home, those who are not able to make it to their regular church and for those who may not feel comfortable attending a regular church service at this time. Through Church at Home, individuals can experience our Sunday morning worship music and teaching, and they may also participate in live discussion.<br>
-                    A Pastor is always available online during the service to chat live and answer any questions. There is also an online Bible app built into the site, so you can follow along during the teaching time.<br>
-                    Church at Home meets every Sunday at 9:00 am. We look forward to having you join us!
+                    Welcome!  Church at Home is live stream of our Sunday morning services at Forward Church in Cambridge, Ontario, Canada.  We normally stream live at 10:55am EDT (GMT - 5:00).  For July and August, our time changes to 10:00 EDT.
+
+If you don’t have a local church home, or are not able to make it to a physical church building, Church at Home is here for you!  To get the most out of the teaching you’ll need a Bible - there is one on this site for you.   We’d love it if you participated in our discussion chat during the teaching, even if you just introduce yourself.  Or, you can get in touch with us at any time by emailing Pastor Kevin at <a href="mailto:kevinp@forwardchurch.ca" target="_blank">kevinp@forwardchurch.ca</a>.  By connecting with us today, you are part of our family, and we are here to serve you. If you’d like to learn more about Forward Church, check us out at <a href="http://forwardchurch.ca" target="_blank">forwardchurch.ca</a>.  We are glad to have you with us!
                 </p>
             </div>
         </div>
