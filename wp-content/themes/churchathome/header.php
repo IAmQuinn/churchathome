@@ -140,10 +140,6 @@
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/images/churchathome_logo.png" alt="Church at Home" />
 			</a>
 
-			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-			</nav>
-
             <div id="mobile_menu">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile_menu.png" />
             </div>
@@ -151,6 +147,10 @@
             <div id="share_button">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/images/share_icon.png" />
             </div>
+
+            <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+            </nav>
 
             <div class="clear_float"></div>
 		</div>

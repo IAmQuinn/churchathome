@@ -64,7 +64,7 @@ font-family: 'Over the Rainbow', cursive;
 @DarkBrown:                 #373126;
 @LightFadedBlue:            #779aa1;
 
-@DarkBlue:                  #0f395e;
+@DarkBlue:                  #0a2544; // #0f395e;
 @LightBlue:                 #69a0be;
 
 
@@ -152,6 +152,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   outline: 0;
   padding: 0;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
@@ -645,23 +646,22 @@ body {
 
 /** Header **/
 header#masthead {
-  height: 50px;
   background-image: url(images/header_bg.jpg);
   position: relative;
 
   .header-main {
-    width: 96%;
-    padding: 0 2%;
-    max-width: 1004px;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
     margin: auto;
 
     #logo_container {
       float: left;
-      height: 27px;
-      width: 70%;
-      max-width: 235px;
-      margin: 10px 0 0 0;
+      height: 24px;
+      width: 200px;
+      margin: 37px 0 0 0;
       padding: 0;
+      overflow: hidden;
 
       img {
         width: 100%;
@@ -679,8 +679,8 @@ header#masthead {
       width: 21px;
       height: 20px;
       display: block;
-      margin: 0;
-      padding: 15px 0 0 15px;
+      padding: 0;
+      margin: 20px 0 0 10px;
 
       img {
         padding: 0;
@@ -697,8 +697,8 @@ header#masthead {
       width: 21px;
       height: 20px;
       display: block;
-      margin: 0;
-      padding: 15px 0 0 0;
+      padding: 0;
+      margin: 20px 0 0 20px;
 
       img {
         padding: 0;
@@ -744,24 +744,21 @@ header#masthead {
   }
 }
 
-@media @Beyond650 {
+@media @Beyond500 {
   header#masthead {
     .header-main {
       #logo_container {
-//        max-width: 235px;
-//        width: 23%;
+        height: 36px;
+        width: 380px;
+        margin: 24px 0 0 0;
       }
     }
   }
 }
+
 @media @Beyond750 {
   header#masthead {
     .header-main {
-      padding: 0;
-
-      #logo_container {
-        width: 23%;
-      }
 
       #mobile_menu {
         display: none;
@@ -770,15 +767,15 @@ header#masthead {
       /** display nav menu **/
       nav#primary-navigation {
         display: block;
-        padding: 15px 0 0 0;
-        margin: 0 0 0 17%;
-        float: left;
-        width: 57%;
+        padding: 0;
+        margin: 20px 0 0 0;
+        float: right;
+        width: 250px;
 
         .menu-main-nav-container {
-
           margin: 0;
           padding: 0;
+
           .nav-menu { // UL
             display: block;
             list-style: none;
@@ -786,9 +783,13 @@ header#masthead {
             margin: 0;
             li {
               display: block;
-              margin: 0 7% 0 0;
+              margin: 0 0 0 20px;
               padding: 0;
               float: left;
+
+              &:first-child {
+                margin: 0;
+              }
 
               a {
                 .oxygen(15px, @White, normal, none, normal, 20px);
@@ -802,72 +803,10 @@ header#masthead {
     }
   }
 }
-@media @Beyond850 {
-  header#masthead {
-    .header-main {
-      /** display nav menu **/
-      nav.primary-navigation {
-        .menu-main-nav-container {
-          #menu-main-nav {
-            li {
-              display: block;
-              margin: 0 7% 0 0;
-              padding: 0;
-              float: left;
-              a {
-                .oxygen(18px, @White, normal, none, normal, 20px);
-              }
-            }
-          }
-        }
-      } /** nav.primary-navigation **/
-    }
-  }
-}
 @media @Beyond950 {
   header#masthead {
     .header-main {
-      /** display nav menu **/
-      nav.primary-navigation {
-        .menu-main-nav-container {
-          #menu-main-nav {
-            li {
-              display: block;
-              margin: 0 8% 0 0;
-              padding: 0;
-              float: left;
-              a {
-                .oxygen(18px, @White, normal, none, normal, 20px);
-              }
-            }
-          }
-        }
-      } /** nav.primary-navigation **/
-    }
-  }
-}
-@media @Beyond1020 {
-  header#masthead {
-    .header-main {
-      width: 100%;
-      max-width: 1004px;
-
-      /** display nav menu **/
-      nav.primary-navigation {
-        .menu-main-nav-container {
-          #menu-main-nav {
-            li {
-              display: block;
-              margin: 0 9.5% 0 0;
-              padding: 0;
-              float: left;
-              a {
-                .oxygen(18px, @White, normal, none, normal, 20px);
-              }
-            }
-          }
-        }
-      } /** nav.primary-navigation **/
+      padding: 0 60px;
     }
   }
 }
