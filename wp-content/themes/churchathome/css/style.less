@@ -224,6 +224,7 @@ h5 {
 h6 {
   font-size: 16px;
   line-height: 1.5;
+  color: @DarkBlue;
 }
 
 address {
@@ -553,11 +554,6 @@ body {
           }
         }
       }
-
-    }
-    footer#colophon {
-      max-width: 1004px;
-      margin: auto;
     }
   }
   #mobile_nav_container {
@@ -1656,88 +1652,84 @@ header#masthead {
 /** Footer **/
 footer#colophon {
   width: 100%;
-  max-width: 1004px;
-  margin: auto;
 
   #footer_interior {
-    width: 99%;
-    padding: 10px .5% 0 .5%;
+    padding: 10px 10px 20px 10px;
     border-top: 1px solid @DarkGrey;
-    margin: 10px 0 40px 0;
-
-    #forward_logo {
-      float: left;
-      display: block;
-      width: 126px;
-      height: 35px;
-      margin-right: 20px;
-
-      img {
-        width: 100%;
+    .footer_section {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px 0;
+      h6 {
+        margin: 0;
+      }
+      &.logo {
+        max-width: 100%;
       }
     }
 
-    #information {
-      float: left;
-      span, a {
-        .oxygen(12px, @Brown, normal, none, normal, 16px);
-        padding: 0;
-      }
-      #top_line {
-        margin: 2px 0 0 0;
-        padding: 0;
-        span.address {
-          display: block;
-          margin: 0 25px 0 0;
-          padding: 0;
-          float: left;
-        }
-        span.phone_number {
-          margin: 0;
-          padding: 0;
-          display: block;
-          float: left;
-        }
-      }
-      #bottom_line {
-        margin: 2px 0 0 0;
-        padding: 0;
-        span.website {
-          padding: 0;
-          margin: 0;
-          display: block;
-          a {
-            &:hover {
-              color: lighten(@Brown, 15%);
-            }
-            img {
-              padding: 0;
-              margin: 0;
-            }
-          }
-        }
-      }
-    } /** Information **/
+    #forward_logo {
+      width: 134px;
+      height: 40px;
+      display: block;
+    }
 
-    #social_buttons {
-      height: 20px;
-      float: right;
-      padding: 0;
-      margin: 18px 0 0 0;
-
-      .fb-like {
-        float: left;
+    a {
+      .oxygen(12px, @DarkBlue, normal, none, normal, 16px);
+      &:hover {
+        color: lighten(@DarkBlue, 15%);
       }
-      #g-plusone_container {
-        display: block;
-        float: right;
-        padding: 3px 0 0 10px;
+      img {
+        padding: 0;
         margin: 0;
       }
     }
-
+    span {
+      .oxygen(12px, @DarkBlue, normal, none, normal, 16px);
+      padding: 0;
+      margin: 0;
+      display: block;
+    }
   } /** Footer Interior **/
 }
 
+@media @Beyond650 {
+  footer#colophon {
+    width: 100%;
+
+    #footer_interior {
+      .footer_section {
+        &.section-1 {
+          float: left;
+        }
+        &.section-2 {
+          float: left;
+        }
+        &.section-3 {
+          float: left;
+        }
+      }
+    }
+  }
+}
+@media @Beyond950 {
+  footer#colophon {
+    #footer_interior {
+      padding: 10px 60px 20px 60px;
+    }
+  }
+}
+@media @Beyond1100 {
+  footer#colophon {
+    #footer_interior {
+      .footer_section {
+        &.logo {
+          float: left;
+          max-width: 335px;
+        }
+      }
+    }
+  }
+}
 
 
