@@ -14,63 +14,35 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
             <div id="footer_interior">
-                <a id="forward_logo" href="http://forwardchurch.ca" target="_blank">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/forward_footer_logo_v2.png" alt="Forward Church" />
-                </a>
-                <div class="addresses_wrapper">
-                    <div id="information">
-                        <div class="site">
-                            <h6 class="church_name">Forward Church Cambridge</h6>
-                            <span class="address">55 Franklin Boulevard, Cambridge ON, N1R 5S2</span>
-                            <span class="phone_number">519.621.6566</span>
-                            <div class="clear_float"></div>
-                        </div>
-                        <div class="site">
-                            <h6 class="church_name">Forward Church Kitchener</h6>
-                            <span class="address">600 Doon Village Rd, Kitchener, ON N2P 1G6</span>
-                            <span class="phone_number">519.621.6566</span>
-                            <div class="clear_float"></div>
-                        </div>
-                        <div class="links">
-                            <span class="website">
-                                <a href="http://forwardchurch.ca" target="_blank">
-                                    <img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/open_link_icon.png" alt="ForwardChurch.ca"/>
-                                    www.forwardchurch.ca
-                                </a>
-                                <a href="http://forwardchurch.ca/messages-media/" target="_blank">
-                                    <img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/open_link_icon.png" alt="ForwardChurch.ca"/>
-                                    Check out our archive of all past teaching.
-                                </a>
-                            </span>
-                        </div>
-<!--                        <div id="bottom_line">-->
-<!--                            <span class="website">-->
-<!--                                <a href="http://forwardchurch.ca" target="_blank">-->
-<!--                                    <img class="icon" src="--><?php //bloginfo('stylesheet_directory'); ?><!--/images/open_link_icon.png" alt="ForwardChurch.ca"/>-->
-<!--                                    www.forwardchurch.ca-->
-<!--                                </a>-->
-<!--                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-<!--                                <a href="http://forwardchurch.ca/messages-media/" target="_blank">-->
-<!--                                    <img class="icon" src="--><?php //bloginfo('stylesheet_directory'); ?><!--/images/open_link_icon.png" alt="ForwardChurch.ca"/>-->
-<!--                                    Check out our archive of all past teaching.-->
-<!--                                </a>-->
-<!--                            </span>-->
-<!--                        </div>-->
-                    </div>
+                <div class="footer_section logo">
+                    <a id="forward_logo" href="http://forwardchurch.ca" target="_blank">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/forward_footer_logo_v2.png" alt="Forward Church" />
+                    </a>
                 </div>
-
-<!--                <div id="social_buttons">-->
-<!--                    <div class="fb-like" data-href="http://churchathome.ca/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>-->
-
-                    <!-- Place this tag where you want the +1 button to render. -->
-<!--                    <div id="g-plusone_container">-->
-<!--                        <div class="g-plusone" data-size="medium" data-href="http://churchathome.ca"></div>-->
-<!--                    </div>-->
-
-<!--                    <div class="clear_float"></div>-->
-<!--                    <img src="--><?php //bloginfo('stylesheet_directory'); ?><!--/images/social_icons.png" />-->
-<!--                </div>-->
-
+                <div class="footer_section section-1">
+                    <h6 class="church_name">Forward Church Cambridge</h6>
+                    <span>55 Franklin Boulevard, Cambridge ON, N1R 5S2</span>
+                    <span>519.621.6566</span>
+                </div>
+                <div class="footer_section section-2">
+                    <h6 class="church_name">Forward Church Kitchener</h6>
+                    <span>600 Doon Village Rd, Kitchener, ON N2P 1G6</span>
+                    <span>519.621.6566</span>
+                </div>
+                <div class="footer_section section-3">
+                    <span>
+                        <a href="http://forwardchurch.ca" target="_blank">
+                            <img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/open_link_icon.png" alt="ForwardChurch.ca"/>
+                            www.forwardchurch.ca
+                        </a>
+                    </span>
+                    <span>
+                        <a href="http://forwardchurch.ca/messages-media/" target="_blank">
+                            <img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/open_link_icon.png" alt="ForwardChurch.ca"/>
+                            Check out our archive of all past teaching.
+                        </a>
+                    </span>
+                </div>
                 <div class="clear_float"></div>
             </div>
 		</footer><!-- #colophon -->
@@ -88,18 +60,6 @@
     ga('send', 'pageview');
 
 </script>
-
-<!--    <script type="text/javascript">-->
-<!--var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");-->
-<!--document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));-->
-<!--</script>-->
-<!--<script type="text/javascript">-->
-<!--try {-->
-<!--var pageTracker = _gat._getTracker("UA-36599586-1");//UA-6630181-1-->
-<!--pageTracker._trackPageview();-->
-<!--} catch(err) {}</script>-->
-<!---->
-<!--<script>-->
 
 </body>
 </html>
