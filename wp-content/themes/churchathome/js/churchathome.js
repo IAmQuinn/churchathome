@@ -170,8 +170,6 @@ $j(document).ready(function() {
             url: "api/get_chat_users.php",
             dataType: "json",
             success: function( data ) {
-//                alert(data[0].user_blocked);
-
                 var html = '<form action="/api/block_users.php" method="post">';
                 html += '<h2>Users</h2>';
                 html += '<p>Select or deselect users and click Update at the bottom to block or unblock chat users.</p>';
@@ -239,15 +237,14 @@ function setCountdown() {
         type: 'GET',
         data: {gmt: gmtHours},
         success: function(result) {
-
             $j('#countdown').countdown(result)
                 .on('update.countdown', function(event) {
-                    var format = '%H hour%!H, %M minute%!M, %S second%!S';
+                    var format = '%H HOUR%!H, %M MINUTE%!M, %S SECOND%!S';
                     if(event.offset.days > 0) {
-                        format = '%-d day%!d, ' + format;
+                        format = '%-d DAY%!d, ' + format;
                     }
                     if(event.offset.weeks > 0) {
-                        format = '%-w week%!w, ' + format;
+                        format = '%-w WEEK%!w, ' + format;
                     }
                     $j(this).html(event.strftime(format));
                 })
@@ -293,13 +290,17 @@ function flipVideoBox_ShowCountdown() {
     $j('#video_box').addClass('show_background');
 }
 function flipVideoBox_ShowLastWeek() {
-    var html = "<iframe id='last_week_iframe' " +
-    "src='//player.vimeo.com/video/114676691?autoplay=1'" +
-    "frameborder='0'" +
-    "webkitallowfullscreen mozallowfullscreen allowfullscreen >" +
-    "</iframe>";
-    $j('#video_box').removeClass("show_background");
-    $j('#countdown_box').html(html);
+    // var html = "<iframe id='last_week_iframe' " +
+    // "src='//player.vimeo.com/video/114676691?autoplay=1'" +
+    // "frameborder='0'" +
+    // "webkitallowfullscreen mozallowfullscreen allowfullscreen >" +
+    // "</iframe>";
+    // $j('#video_box').removeClass("show_background");
+    // $j('#countdown_box').html(html);
+    $j('#watch_last_service').removeClass("db");
+    $j('#watch_last_service').addClass("dn");
+    $j('#last_week_iframe').removeClass("dn");
+    $j('#last_week_iframe').addClass("db");
 }
 function loopForMessages() {
 

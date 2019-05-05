@@ -589,6 +589,7 @@ function twentyfourteen_scripts() {
 
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
+    wp_enqueue_style( 'tachyons', get_template_directory_uri() . '/css/tachyons.min.css', array(), '1' );
 
 	// Load our main stylesheet.
 	wp_enqueue_style( 'twentyfourteen-style', get_stylesheet_uri(), array( 'genericons' ) );
